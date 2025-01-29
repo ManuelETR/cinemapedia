@@ -1,4 +1,6 @@
-//entidad de moovie
+//Una entidad es un objeto de negocio que se utiliza para representar 
+//los datos que se manejan en la aplicación. En este caso, la entidad Movie representa 
+//los datos de una película.
 
 class Movie {
   final bool adult;
