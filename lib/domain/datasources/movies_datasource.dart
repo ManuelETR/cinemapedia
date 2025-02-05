@@ -1,9 +1,16 @@
-//definimos como queremos que sean nuestros origenes de datos
+//definimos los metodos que se utilizaran para obtener los datos de las peliculas
 
 import 'package:cinemapedia/domain/entities/movie.dart';
 
 abstract class MoviesDatasource {
 
  Future<List<Movie>> getNowPlaying({ int page = 1});
+
+ Future<List<Movie>> getPopular({ int page = 1});
+
+  Future<List<Movie>> getUpcoming({ int page = 1});
+
+  Future<List<Movie>> getTopRated({ int page = 1});
+
 
 }
